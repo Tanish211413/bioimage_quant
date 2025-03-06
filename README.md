@@ -27,3 +27,18 @@ To install a development version, clone this repository and install it with `pip
 git clone https://github.com/harmslab/gelquant.git
 cd gelquant
 pip install -e .
+
+## Dependencies
+
+GelQuant requires the following Python libraries:
+
+matplotlib
+numpy
+pillow (PIL)
+pandas
+os (built-in, no installation needed)
+natsort
+scipy
+
+To Install
+pip install matplotlib numpy pillow pandas natsort scipy
