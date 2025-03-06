@@ -1,4 +1,4 @@
-@@ -0,0 +1,28 @@
+
 # GelQuant
 
 Simple band quantification software for protein and DNA gels/blots. 
@@ -19,11 +19,9 @@ For an example of how GelQuant works, check out:
  `notebook-example.ipynb`  
  `gel-example.png`  
 
----
-
 ##  Installation
 To install a development version, clone this repository and install it with `pip`:
-```sh
+
 git clone https://github.com/harmslab/gelquant.git
 cd gelquant
 pip install -e .
