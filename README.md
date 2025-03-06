@@ -30,13 +30,13 @@ pip install -e .
 
 GelQuant requires the following Python libraries:
 
-matplotlib
-numpy
-pillow (PIL)
-pandas
-os (built-in, no installation needed)
-natsort
-scipy
+1)matplotlib
+2)numpy
+3)pillow (PIL)
+4)pandas
+5)os (built-in, no installation needed)
+6)natsort
+7)scipy
 
 To Install
 pip install matplotlib numpy pillow pandas natsort scipy
