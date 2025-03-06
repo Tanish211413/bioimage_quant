@@ -1,13 +1,29 @@
-Simple python-based quantification software for simple biological images. Currently implemented for protein and DNA gels/blots and yeast spotting assays. Takes an input image which gets cropped by the user and converts to a grayscale numpy array using the Python Image Library (PIL). Then splits image into user-specified lanes/boxes, and the average intensity of every pixel per lane/band/blot/spot is calculated. 
+@@ -0,0 +1,28 @@
+# GelQuant
 
-For gels, intensities have the option to be gaussian-weighted so that the middle of the gel band contributes more to the average than the outer edges, as other lanes in gels sometimes bleed into the lane of interest. Data for each slice is baselined given a user-specified baselining region. This data is plotted and can be quantified for band intensities.
+Simple band quantification software for protein and DNA gels/blots. 
 
-Note: updates needed for SDS-PAGE gel analysis (spotting assay approach is much faster/better implemented). The pipeline is functional and accurate but slow; old code is preserved to reflect analysis in https://elifesciences.org/articles/54100. 
+## ** Overview**
+GelQuant processes gel/blot images for quantification. The software allows users to:  
+- **Import and crop** gel images as desired.  
+- **Split the image** into user-specified vertical lanes.  
+- **Convert lanes to numerical data** using NumPy.  
+- **Calculate average RGB intensity** for each row in the lane.  
+- **Apply Gaussian weighting** to emphasize the middle of the lane while reducing edge interference.  
+- **Baseline correction** based on user-specified regions.  
+- **Plot the data** and perform band intensity quantification.  
 
-See example .ipynb notebooks for details/example usage.
 
-To install a development version, clone this repo and pip install:
+## ** Example Usage**
+For an example of how GelQuant works, check out:  
+ `notebook-example.ipynb`  
+ `gel-example.png`  
 
+---
+
+## ** Installation
+To install a **development version**, clone this repository and install it with `pip`:
+```sh
+git clone https://github.com/harmslab/gelquant.git
+cd gelquant
 pip install -e .
-
-Dependencies: matplotlib, numpy, PIL, pandas, os, natsort, scipy
