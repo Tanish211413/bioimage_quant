@@ -3,7 +3,7 @@
 
 Simple band quantification software for protein and DNA gels/blots. 
 
-## ** Overview**
+## Overview
 GelQuant processes gel/blot images for quantification. The software allows users to:  
 - **Import and crop** gel images as desired.  
 - **Split the image** into user-specified vertical lanes.  
@@ -14,15 +14,15 @@ GelQuant processes gel/blot images for quantification. The software allows users
 - **Plot the data** and perform band intensity quantification.  
 
 
-## ** Example Usage**
+##  Example Usage
 For an example of how GelQuant works, check out:  
  `notebook-example.ipynb`  
  `gel-example.png`  
 
 ---
 
-## ** Installation
-To install a **development version**, clone this repository and install it with `pip`:
+##  Installation
+To install a development version, clone this repository and install it with `pip`:
 ```sh
 git clone https://github.com/harmslab/gelquant.git
 cd gelquant
